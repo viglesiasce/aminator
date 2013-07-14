@@ -11,6 +11,12 @@ ec2_apt_linux:
     volume: linux
     blockdevice: linux
     finalizer: tagging_ebs
+euca_apt_script_linux:
+    cloud: euca
+    provisioner: apt_script
+    volume: virtio
+    blockdevice: virtio
+    finalizer: tagging_ebs_euca
 ec2_apt_chef_linux:
     cloud: ec2
     provisioner: apt_chef

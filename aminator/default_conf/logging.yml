@@ -16,7 +16,7 @@ base:
       console:
         class: logging.StreamHandler
         formatter: simple
-        level: INFO
+        level: DEBUG
         stream: ext://sys.stdout
       aminator:
         class: logging.FileHandler
@@ -34,7 +34,7 @@ base:
     loggers:
       boto:
         handlers: [boto]
-        level: DEBUG
+        level: INFO
       aminator:
         handlers: [aminator]
         level: DEBUG
